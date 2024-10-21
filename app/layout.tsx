@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import Link from "next/link";
 import Image from 'next/image';
+import Logo from '../public/images/logo.png'
 import { Button } from "@/components/ui/button"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -59,7 +60,7 @@ export default function RootLayout({
           <div className="flex items-center gap-5 ">
             <Link href="/" legacyBehavior passHref>
               <div className="flex items-center gap-1 ml-4 mt-4 cursor-pointer">
-                <Image src='/images/logo.webp' alt="Company Logo" width={35} height={35} />
+                <Image src={Logo} alt="Company Logo" width={35} height={35} />
                 <strong className="font-bold text-lg">OneLot</strong>
               </div>
             </Link>
