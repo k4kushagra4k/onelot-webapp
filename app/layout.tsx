@@ -6,18 +6,15 @@ import { cn } from "@/lib/utils"
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuElement,
-  NavigationMenuViewport,
-  navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 import Link from "next/link";
 import Image from 'next/image';
-import { Button, buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

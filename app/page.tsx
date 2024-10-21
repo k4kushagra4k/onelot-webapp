@@ -1,5 +1,3 @@
-// "use client"
-import Link from "next/link";
 import Image from 'next/image';
 import { Button, buttonVariants } from "@/components/ui/button"
 import Image1 from '../public/images/image1.webp'
