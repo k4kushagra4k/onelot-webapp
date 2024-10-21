@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button, buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import Image1 from '../public/images/image1.webp'
 import Image2 from '../public/images/image2.webp'
 import Image3 from '../public/images/image3.webp'
