@@ -1,101 +1,355 @@
-import Image from "next/image";
-
+// "use client"
+import Link from "next/link";
+import Image from 'next/image';
+import { Button, buttonVariants } from "@/components/ui/button"
+import Image1 from '../public/images/image1.webp'
+import Image2 from '../public/images/image2.webp'
+import Image3 from '../public/images/image3.webp'
+import Image4 from '../public/images/image4.webp'
+import Image5 from '../public/images/image5.png'
+import DealerLoansIcon from '../public/images/dlicon.png'
+import DealershipMSystemIcon from '../public/images/dmsicon.png'
+import DemoAvatar from '../public/images/avatar.webp'
+import { MoveRight, Check, LockKeyhole, TrendingUp, HandCoins, Zap, Handshake, Facebook, Instagram, CircleHelp } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-gray-100 ">
+      <div className="flex mx-auto text-5xl text-center font-bold w-5/6 mt-20">Grow your dealership with working capital loans and
+        digital tools from OneLot</div>
+      <div className="flex mx-auto text-xl text-center text-gray-400 w-1/2 mt-10"> We enable dealers to buy more cars through our working capital loan solutions and
+        sell cars more efficiently through our Dealership Management System with its
+        inventory management, marketing solutions and market insights
+      </div>
+      <div className="flex justify-center my-6">
+        <Button className='text-base'>Inquire Now</Button>
+      </div>
+      <Image src={Image1} alt='Image' width={1300} className="flex mx-auto my-6" />
+      <div className="flex flex-col mx-auto my-6 w-48">
+        <div className="font-semibold text-gray-400">Regulated by</div>
+        <Image src={Image2} alt='Image' className="" />
+      </div>
+      <div className="border border-gray-300 border-b-1"></div>
+      <div className="grid grid-cols-2 bg-white py-10">
+        <div className="col-span-1 ">
+          <div className="flex mx-auto text-4xl font-bold w-4/6  mb-4">Everything you need to grow
+            your business</div>
+          <div className="flex mx-auto text-xl text-gray-400 w-4/6 mb-2">OneLot is your trusted lending and financing partner, exclusively tailored for used car dealership. We also offer digital tools for streamlined operations and growth of
+            your dealership.
+          </div>
+          <Button variant="link" className=" text-base font-semibold text-purple-800 ml-28">Learn more<MoveRight /></Button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="col-span-1">
+          <div className="flex gap-3 mb-8">
+            <div>
+              <Image src={DealerLoansIcon} alt="Image" width={40}></Image>
+            </div>
+            <div>
+              <div className="text-xl font-semibold mb-2">Dealer Loans</div>
+              <div className="text-base font-semibold text-cyan-500 mb-2">Accelerate your growth with tailored loan solutions.
+              </div>
+              <div className="text-base text-gray-400 w-4/5">Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights.</div>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <div>
+              <Image src={DealershipMSystemIcon} alt="Image" width={40}></Image>
+            </div>
+            <div>
+              <div className="text-xl font-semibold mb-2">Dealership Management System
+              </div>
+              <div className="text-base font-semibold text-purple-500 mb-2">Enhance Efficiency and Sales with Free Digital Tools for Car Dealerships.
+              </div>
+              <div className="text-base text-gray-400 w-4/5">OneLot offers a suite of powerful digital tools designed to optimize your dealership's operations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* CAR FINANCING SECTION */}
+      <div className="grid grid-cols-2 my-20">
+        <div className="col-span-1">
+          <Image src={Image3} alt="Image" className="shadow-md rounded-lg"></Image>
+        </div>
+        <div className="col-span-1 flex flex-col mx-auto w-4/6">
+          <div className="text-4xl font-bold  mb-4">Car Financing</div>
+          <div className="text-xl font-semibold mb-2">Dealer Loans</div>
+          <div className="text-xl text-gray-400 mb-2">OneLot’s working capital loans allow car dealers to buy more cars and capitalize on opportunities you would otherwise have missed. We transfer the money to your account within 6 hours.
+          </div>
+          <div className="border border-gray-300 border-b-1 my-6"></div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div className="text-base font-semibold">Interest as low as 1.8% per month with daily calculation of interest</div>
+          </div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div className="text-base font-semibold">Financing up to 70% of the vehicle purchase</div>
+          </div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div className="text-base font-semibold">Financing period up to 90 days with a flexible repayment schedule at any point</div>
+          </div>
+          <div className="border border-gray-300 border-b-1 my-6"></div>
+          <div className="text-xl text-gray-400 mb-2">Use OneLot's financing solution today, grow the number of cars in your lot, and increase your profits.
+          </div>
+          <div className="my-6">
+            <Button className='text-base'>View Loans<MoveRight /> </Button>
+          </div>
+        </div>
+      </div>
+      {/* DEALERSHIP MANAGEMENT SYSTEM SECTION */}
+      <div className="grid grid-cols-2 my-20">
+        <div className="col-span-1 flex flex-col mx-auto w-4/6">
+          <div className="text-4xl font-bold  mb-4">Dealership Management
+            System</div>
+          {/* <div className="text-xl font-semibold mb-2">Dealer Loans</div> */}
+          <div className="text-xl text-gray-400 mb-2">OneLot’s digital platform has been build with the single
+            goal to help used car dealers to operate their business
+            more efficiently.
+          </div>
+          <div className="border border-gray-300 border-b-1 my-6"></div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div>
+              <span className="text-base font-semibold">Inventory Management: </span>
+              <span>Track all details about your cars and sales
+                in one place - from car details to buyers. All you need to now in one
+                place</span>
+            </div>
+          </div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div>
+              <span className="text-base font-semibold">Marketing Tools: </span>
+              <span> Promote your cars across all the different
+                platforms. Write a marketing text and upload on Facebook
+                Marketplace, Groups, Pages and Instagram with a single click of a
+                button</span>
+            </div>
+          </div>
+          <div className="flex gap-2 my-2">
+            <div>
+              <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
+            </div>
+            <div>
+              <span className="text-base font-semibold">Market Insights (Coming Soon): </span>
+              <span>Get insights on prices and
+                volumes for all cars in the market. We provide you all the date by
+                combining data from various sources with a single click of a
+                button</span>
+            </div>
+          </div>
+          <div className="border border-gray-300 border-b-1 my-6"></div>
+          <div className="text-xl text-gray-400 mb-2">Sign-up OneLot’s dealer platform today, and your cars easier</div>
+          <div className="my-6">
+            <Button className='text-base'>Explore now<MoveRight /> </Button>
+          </div>
+        </div>
+        <div className="col-span-1">
+          <Image src={Image4} alt="Image" className="shadow-md rounded-lg"></Image>
+        </div>
+      </div>
+      <div className="bg-white py-10">
+        <div className="text-4xl text-center font-bold  my-10 ">Why Onelot?</div>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mx-20 my-10">
+          <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
+            <div className="flex justify-center my-1">
+              <LockKeyhole className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
+            </div>
+            <div className="text-lg font-semibold my-2">Trust</div>
+            <div className="text-base text-gray-400 my-2 px-2">
+              Regulated by Securities and Exchange Commission (SEC) Philippines
+            </div>
+          </div>
+          <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
+            <div className="flex justify-center my-1">
+              <TrendingUp className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
+            </div>
+            <div className="text-lg font-semibold my-2">High Amount
+
+            </div>
+            <div className="text-base text-gray-400 my-2 px-2">
+              Get the highest loan amounts compared to other banks and lenders
+            </div>
+          </div>
+          <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
+            <div className="flex justify-center my-1">
+              <Zap className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
+            </div>
+            <div className="text-lg font-semibold my-2">Fast</div>
+            <div className="text-base text-gray-400 my-2 px-2">
+              Get the money within a few hours on the same day
+            </div>
+          </div>
+          <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
+            <div className="flex justify-center my-1">
+              <HandCoins className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
+            </div>
+            <div className="text-lg font-semibold my-2">Flexible</div>
+            <div className="text-base text-gray-400 my-2 px-2">
+              Loans are tailored to your needs
+            </div>
+          </div>
+          <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
+            <div className="flex justify-center my-1">
+              <Handshake className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
+            </div>
+            <div className="text-lg font-semibold my-2">Easy</div>
+            <div className="text-base text-gray-400 my-2 px-2">
+              Run through an easy process and get your first loans within days
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="text-4xl text-center font-bold  mt-10 ">Testimonials </div>
+      <div className="flex justify-center">
+        <Carousel className="w-full max-w-full"
+          opts={{
+            align: "center",
+            loop: true,
+          }}>
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <div className="p-1">
+                  <Card className="bg-gray-100">
+                    <CardContent className="flex flex-col items-center p-6">
+                      <Avatar className="w-20 h-20">
+                        <AvatarImage src={DemoAvatar.src} alt="Avatar" />
+                        <AvatarFallback>CN</AvatarFallback>
+                      </Avatar>
+                      <div className="text-2xl text-center font-semibold my-2 w-7/12 p-2">“The service of OneLot is top notch, they act fast and can provide
+                        dealers with the funds they need, when they need it.”</div>
+                      <div className="flex items-center gap-4">
+                        <div className="text-base font-semibold">Mark Vergel de Dios </div>
+                        <div className=" text-gray-400">Owner, MVD Auto Works</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex items-center justify-center  mb-4">
+            <CarouselPrevious className="text-gray-400" />
+            <CarouselNext className="text-gray-400" />
+          </div>
+        </Carousel>
+      </div>
+      <div className="bg-white py-10">
+        <div className="text-4xl text-center font-bold  my-10">Stay connected</div>
+        <div className="flex mx-auto text-xl text-center text-gray-400 w-2/5">Follow OneLot on our Facebook and Instagram page and stay up to
+          date with our most recent recent offers, updates and new product
+          features
+        </div>
+        <div className="flex justify-center items-center gap-2 my-6 ">
+          <Button variant="outline"><Facebook /> Follow us on Facebook</Button>
+          <Button variant="outline"><Instagram /> Follow us on Instagram</Button>
+        </div>
+        <div className="w-full max-w-full my-10">
+          <Image src={Image5} alt="Image"></Image>
+        </div>
+      </div>
+      <div className="text-4xl text-center font-bold  mt-10 ">Frequently asked questions
+      </div>
+      <div className="mx-auto max-w-4xl my-10">
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="item-1">
+            <AccordionTrigger >
+              <div className="flex items-center gap-1">
+                <CircleHelp />
+                <div className="text-base font-semibold">How do I apply for a loan? </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="text-gray-400">
+                OneLot onboarding is easy and straightforward onboarding process. We only require a
+                few documents and after a few days you can get your first loan.</div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-2">
+            <AccordionTrigger >
+              <div className="flex items-center gap-1">
+                <CircleHelp />
+                <div className="text-base font-semibold">What are the interest rates offered? </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="text-gray-400">
+                OneLot onboarding is easy and straightforward onboarding process. We only require a
+                few documents and after a few days you can get your first loan.</div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-3">
+            <AccordionTrigger >
+              <div className="flex items-center gap-1">
+                <CircleHelp />
+                <div className="text-base font-semibold">What kind of vehicles can I upload?
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="text-gray-400">
+                OneLot onboarding is easy and straightforward onboarding process. We only require a
+                few documents and after a few days you can get your first loan.</div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="item-4">
+            <AccordionTrigger >
+              <div className="flex items-center gap-1">
+                <CircleHelp />
+                <div className="text-base font-semibold">How can I keep track of potential buyers?
+
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="text-gray-400">
+                OneLot onboarding is easy and straightforward onboarding process. We only require a
+                few documents and after a few days you can get your first loan.</div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <div className="flex justify-center my-6">
+          <Button className='text-base'>See all<MoveRight /> </Button>
+        </div>
+      </div>
+      <div className="bg-white py-10">
+        <div className="text-4xl text-center font-bold  my-10">Get started today
+        </div>
+        <div className="flex mx-auto text-xl text-center text-gray-400 w-2/5">We look forward to serving the needs of used car dealers across the Philippines and helping them thrive in this dynamic market.
+        </div>
+        <div className="flex justify-center my-6">
+          <Button className='text-base'>Inquire Now </Button>
+        </div>
+      </div>
     </div>
   );
 }
