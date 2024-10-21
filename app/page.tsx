@@ -72,7 +72,7 @@ export default function Home() {
               </div>
               <div className="text-base font-semibold text-purple-500 mb-2">Enhance Efficiency and Sales with Free Digital Tools for Car Dealerships.
               </div>
-              <div className="text-base text-gray-400 w-4/5">OneLot offers a suite of powerful digital tools designed to optimize your dealership's operations.</div>
+              <div className="text-base text-gray-400 w-4/5">OneLot offers a suite of powerful digital tools designed to optimize your dealership&apos;s operations.</div>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function Home() {
             <div className="text-base font-semibold">Financing period up to 90 days with a flexible repayment schedule at any point</div>
           </div>
           <div className="border border-gray-300 border-b-1 my-6"></div>
-          <div className="text-xl text-gray-400 mb-2">Use OneLot's financing solution today, grow the number of cars in your lot, and increase your profits.
+          <div className="text-xl text-gray-400 mb-2">Use OneLot&apos;s financing solution today, grow the number of cars in your lot, and increase your profits.
           </div>
           <div className="my-6">
             <Button className='text-base'>View Loans<MoveRight /> </Button>
