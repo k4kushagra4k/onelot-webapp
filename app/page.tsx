@@ -9,7 +9,8 @@ import Image5 from '../public/images/image5.png'
 import DealerLoansIcon from '../public/images/dlicon.png'
 import DealershipMSystemIcon from '../public/images/dmsicon.png'
 import DemoAvatar from '../public/images/avatar.webp'
-import { MoveRight, Check, LockKeyhole, TrendingUp, HandCoins, Zap, Handshake, Facebook, Instagram, CircleHelp } from "lucide-react"
+import Logo from '../public/images/logo.png'
+import { MoveRight, Check, LockKeyhole, TrendingUp, HandCoins, Zap, Handshake, Facebook, Instagram, CircleHelp, ChevronDown } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -25,6 +26,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 export default function Home() {
   return (
     <div className="bg-gray-100 ">
@@ -347,6 +349,41 @@ export default function Home() {
         </div>
         <div className="flex justify-center my-6">
           <Button className='text-base'>Inquire Now </Button>
+        </div>
+        {/* . */}
+        <div className='flex justify-between mt-36 mb-10 px-20'>
+          <div className='flex items-center gap-1'>
+            <Image src={Logo} alt='Image' width={60} height={60}></Image>
+            <div className='text-2xl font-bold'>OneLot</div>
+          </div>
+          <div>
+            <div className='flex items-center gap-6 my-4'>
+              <div className='text-lg text-gray-400'>Home</div>
+              <div className='text-lg text-gray-400'>Features</div>
+              <div className='text-lg text-gray-400'>About</div>
+              <div className='text-lg text-gray-400'>Contact</div>
+            </div>
+
+            <div className='flex items-center justify-end my-4'>
+              <span className='text-sm mr-1'>ENG </span>
+              <span className="fi fi-us"></span>
+              <ChevronDown />
+            </div>
+
+          </div>
+        </div>
+        <div className="border border-gray-300 border-b-1 my-6"></div>
+        <div className='flex justify-between  px-20'>
+          <div>
+            <div className='text-gray-400'>&copy; 2023 OneLot Technologies Incorporated Pte. Ltd. All rights reserved.
+            </div>
+            <div className='text-gray-400'>&copy; 2023 OneLot Financing Corporation All rights reserved.
+            </div>
+          </div>
+          <div className='flex items-center gap-6 self-end'>
+            <Instagram />
+            <Facebook />
+          </div>
         </div>
       </div>
     </div>
