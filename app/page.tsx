@@ -40,9 +40,9 @@ export default function Home() {
         <Button className='text-base'>Inquire Now</Button>
       </div>
       <Image src={Image1} alt='Image' className="w-full md:w-5/6 mx-auto my-6" />
-      <div className="flex flex-col mx-auto my-6 w-48">
-        <div className="font-semibold text-gray-400">Regulated by</div>
-        <Image src={Image2} alt='Image' className="w-5/6 md:w-full" />
+      <div className="flex flex-col items-center my-6">
+        <div className="text-sm md:text-base font-semibold text-gray-400">Regulated by</div>
+        <Image src={Image2} alt='Image' className="w-48" />
       </div>
       <div className="border-t border-gray-200 "></div>
       <div className="md:grid grid-cols-2 bg-white py-10">
@@ -52,11 +52,11 @@ export default function Home() {
           <div className="flex mx-auto text-base md:text-xl text-gray-400 w-5/6 md:w-4/6 mb-2">OneLot is your trusted lending and financing partner, exclusively tailored for used car dealership. We also offer digital tools for streamlined operations and growth of
             your dealership.
           </div>
-          <Button variant="link" className=" text-base font-semibold text-purple-800 ml-28">Learn more<MoveRight /></Button>
+          <Button variant="link" className=" text-base font-semibold text-purple-800 ml-4 md:ml-28">Learn more<MoveRight /></Button>
         </div>
         <div className="col-span-1">
-          <div className="flex gap-3 mb-8">
-            <div>
+          <div className="md:flex gap-3 mb-8 ml-4 md:ml-0">
+            <div className=''>
               <Image src={DealerLoansIcon} alt="Image" width={40}></Image>
             </div>
             <div>
