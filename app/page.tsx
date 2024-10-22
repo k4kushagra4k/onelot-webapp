@@ -45,8 +45,8 @@ export default function Home() {
         <Image src={Image2} alt='Image' className="w-48" />
       </div>
       <div className="border-t border-gray-200 "></div>
-      <div className="md:grid grid-cols-2 bg-white py-10">
-        <div className="col-span-1 ">
+      <div className="md:grid grid-cols-2 gap-8 bg-white py-10">
+        <div className="col-span-1  ">
           <div className="md:flex mx-auto text-2xl md:text-4xl font-bold w-5/6 md:w-4/6  mb-4">Everything you need to grow
             your business</div>
           <div className="flex mx-auto text-base md:text-xl text-gray-400 w-5/6 md:w-4/6 mb-2">OneLot is your trusted lending and financing partner, exclusively tailored for used car dealership. We also offer digital tools for streamlined operations and growth of
@@ -62,9 +62,9 @@ export default function Home() {
             </div>
             <div>
               <div className="text-xl font-semibold mt-2 md:mt-0 mb-2 ">Dealer Loans</div>
-              <div className="text-base font-semibold text-cyan-500 mb-2">Accelerate your growth with tailored loan solutions.
+              <div className="text-base font-semibold text-cyan-500 mb-2 w-5/6">Accelerate your growth with tailored loan solutions.
               </div>
-              <div className="text-base text-gray-400 w-4/5">Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights.</div>
+              <div className="text-base text-gray-400 w-5/6">Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights.</div>
             </div>
           </div>
           <div className="md:flex gap-3 ml-4 md:ml-0">
@@ -74,9 +74,9 @@ export default function Home() {
             <div>
               <div className="text-xl font-semibold mt-2 md:mt-0 mb-2">Dealership Management System
               </div>
-              <div className="text-base font-semibold text-purple-500 mb-2">Enhance Efficiency and Sales with Free Digital Tools for Car Dealerships.
+              <div className="text-base font-semibold text-purple-500 mb-2 w-5/6">Enhance Efficiency and Sales with Free Digital Tools for Car Dealerships.
               </div>
-              <div className="text-base text-gray-400 w-4/5">OneLot offers a suite of powerful digital tools designed to optimize your dealership&apos;s operations.</div>
+              <div className="text-base text-gray-400 w-5/6">OneLot offers a suite of powerful digital tools designed to optimize your dealership&apos;s operations.</div>
             </div>
           </div>
         </div>
