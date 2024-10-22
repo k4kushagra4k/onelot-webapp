@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 import Image from 'next/image';
 import Logo from '../../public/images/logo.png'
+import { Menu } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 const components: { title: string; href: string; description: string }[] = [
     {
@@ -95,13 +96,11 @@ export default function Navbar() {
                 {/* Hamburger Menu */}
                 <div className="md:hidden mr-4 mt-4">
                     <button onClick={toggleMenu}>
-                        <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
+                        <Menu />
                     </button>
                 </div>
             </div>
-            <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-gray-100 text-white w-full`}>
+            <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-gray-100 text-white`}>
                 <NavigationMenu >
                     <NavigationMenuList className='flex flex-col'>
                         <NavigationMenuItem>
@@ -141,8 +140,14 @@ export default function Navbar() {
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
-            </div>
+                {/* <div className="border-t border-gray-300  my-4 "></div> */}
 
+                <div className='flex flex-col items-center px-2'>
+                    <Button variant="ghost" className="font-semibold text-base text-gray-700 ">Log In</Button>
+                    <Button className='text-base'>Inquire Now</Button>
+                </div>
+            </div>
+            <div className="border-t border-gray-300  my-4 "></div>
         </>
     )
 }
