@@ -54,24 +54,25 @@ export default function Home() {
           </div>
           <Button variant="link" className=" text-base font-semibold text-purple-800 ml-4 md:ml-28">Learn more<MoveRight /></Button>
         </div>
+        <div className='md:hidden border-t border-gray-200 my-4'></div>
         <div className="col-span-1">
           <div className="md:flex gap-3 mb-8 ml-4 md:ml-0">
-            <div className=''>
+            <div >
               <Image src={DealerLoansIcon} alt="Image" width={40}></Image>
             </div>
             <div>
-              <div className="text-xl font-semibold mb-2">Dealer Loans</div>
+              <div className="text-xl font-semibold mt-2 md:mt-0 mb-2 ">Dealer Loans</div>
               <div className="text-base font-semibold text-cyan-500 mb-2">Accelerate your growth with tailored loan solutions.
               </div>
               <div className="text-base text-gray-400 w-4/5">Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights.</div>
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="md:flex gap-3 ml-4 md:ml-0">
             <div>
               <Image src={DealershipMSystemIcon} alt="Image" width={40}></Image>
             </div>
             <div>
-              <div className="text-xl font-semibold mb-2">Dealership Management System
+              <div className="text-xl font-semibold mt-2 md:mt-0 mb-2">Dealership Management System
               </div>
               <div className="text-base font-semibold text-purple-500 mb-2">Enhance Efficiency and Sales with Free Digital Tools for Car Dealerships.
               </div>
