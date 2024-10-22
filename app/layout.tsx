@@ -1,22 +1,7 @@
-
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import * as React from 'react'
-import { cn } from "@/lib/utils"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuElement,
-} from "@/components/ui/navigation-menu"
-import Link from "next/link";
-import Image from 'next/image';
-import Logo from '../public/images/logo.png'
-import { Button } from "@/components/ui/button"
 import Navbar from "@/components/ui/navbar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -64,28 +49,3 @@ export default function RootLayout({
     </html>
   );
 }
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-purple-700 focus:bg-accent focus:text-purple-700",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-semibold leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
