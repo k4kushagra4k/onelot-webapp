@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -16,6 +17,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import Logo from '../public/images/logo.png'
 import { Button } from "@/components/ui/button"
+import Navbar from "@/components/ui/navbar";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -55,61 +57,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex justify-between bg-gray-100">
-          {/* Left side */}
-          <div className="flex items-center gap-5 ">
-            <Link href="/" legacyBehavior passHref>
-              <div className="flex items-center gap-1 ml-4 mt-4 cursor-pointer">
-                <Image src={Logo} alt="Company Logo" width={35} height={35} />
-                <strong className="font-bold text-lg">OneLot</strong>
-              </div>
-            </Link>
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuElement>
-                      Home
-                    </NavigationMenuElement>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger>Products</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                      {components.map((component) => (
-                        <ListItem
-                          key={component.title}
-                          title={component.title}
-                          href={component.href}
-                        >
-                          {component.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuElement>About
-                    </NavigationMenuElement>
-                  </Link>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuElement>Contact
-                    </NavigationMenuElement>
-                  </Link>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
-          {/* Right side */}
-          <div className="flex items-center gap-2 mt-4 mr-4">
-            <Button variant="ghost" className="font-semibold text-base text-gray-700 ">Log In</Button>
-            <Button className='text-base '>Inquire Now</Button>
-          </div>
-        </div>
+        <Navbar />
         <div className="border border-gray-300 border-b-1 mt-4"></div>
         {children}
       </body>
