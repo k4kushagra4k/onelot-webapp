@@ -30,26 +30,26 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 export default function Home() {
   return (
     <div className="bg-gray-100 ">
-      <div className="flex mx-auto text-5xl text-center font-bold w-5/6 mt-20">Grow your dealership with working capital loans and
+      <div className="flex mx-auto text-3xl md:text-5xl text-center font-bold w-5/6 md:mt-20">Grow your dealership with working capital loans and
         digital tools from OneLot</div>
-      <div className="flex mx-auto text-xl text-center text-gray-400 w-1/2 mt-10"> We enable dealers to buy more cars through our working capital loan solutions and
+      <div className="flex mx-auto text-lg md:text-xl text-center text-gray-400 w-5/6 md:w-1/2 mt-10"> We enable dealers to buy more cars through our working capital loan solutions and
         sell cars more efficiently through our Dealership Management System with its
         inventory management, marketing solutions and market insights
       </div>
       <div className="flex justify-center my-6">
         <Button className='text-base'>Inquire Now</Button>
       </div>
-      <Image src={Image1} alt='Image' width={1300} className="flex mx-auto my-6" />
+      <Image src={Image1} alt='Image' className="w-full md:w-5/6 mx-auto my-6" />
       <div className="flex flex-col mx-auto my-6 w-48">
         <div className="font-semibold text-gray-400">Regulated by</div>
-        <Image src={Image2} alt='Image' className="" />
+        <Image src={Image2} alt='Image' className="w-5/6 md:w-full" />
       </div>
-      <div className="border border-gray-300 border-b-1"></div>
-      <div className="grid grid-cols-2 bg-white py-10">
+      <div className="border-t border-gray-200 "></div>
+      <div className="md:grid grid-cols-2 bg-white py-10">
         <div className="col-span-1 ">
-          <div className="flex mx-auto text-4xl font-bold w-4/6  mb-4">Everything you need to grow
+          <div className="md:flex mx-auto text-2xl md:text-4xl font-bold w-5/6 md:w-4/6  mb-4">Everything you need to grow
             your business</div>
-          <div className="flex mx-auto text-xl text-gray-400 w-4/6 mb-2">OneLot is your trusted lending and financing partner, exclusively tailored for used car dealership. We also offer digital tools for streamlined operations and growth of
+          <div className="flex mx-auto text-base md:text-xl text-gray-400 w-5/6 md:w-4/6 mb-2">OneLot is your trusted lending and financing partner, exclusively tailored for used car dealership. We also offer digital tools for streamlined operations and growth of
             your dealership.
           </div>
           <Button variant="link" className=" text-base font-semibold text-purple-800 ml-28">Learn more<MoveRight /></Button>

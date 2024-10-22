@@ -147,7 +147,7 @@ export default function Navbar() {
                     <Button className='text-base'>Inquire Now</Button>
                 </div>
             </div>
-            <div className="border-t border-gray-300  my-4 "></div>
+            <div className="border-t border-gray-200  my-4 "></div>
         </>
     )
 }
