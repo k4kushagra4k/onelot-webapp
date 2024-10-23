@@ -386,10 +386,16 @@ export default function Home() {
             <Facebook />
           </div>
         </div>
-        <div className='md:hidden flex items-center gap-1 ml-4 mt-20'>
-          <Image src={Logo} alt='Image' width={45} height={45}></Image>
-          <div className='text-2xl font-bold'>OneLot</div>
-        </div>
+
+
+      </div>
+      <div className='md:hidden flex items-center gap-1 ml-4 my-2 mb-10'>
+        <Image src={Logo} alt='Image' width={45} height={45}></Image>
+        <div className='text-2xl font-bold'>OneLot</div>
+      </div>
+      <div className='md:hidden text-sm text-gray-400 ml-4 my-2 w-5/6'>&copy; 2023 OneLot Technologies Incorporated Pte. Ltd. All rights reserved.
+      </div>
+      <div className='md:hidden text-sm text-gray-400 ml-4 my-2 w-5/6' >&copy; 2023 OneLot Financing Corporation All rights reserved.
       </div>
     </div>
   );
