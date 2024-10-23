@@ -39,13 +39,13 @@ export default function Home() {
       <div className="flex justify-center my-6">
         <Button className='text-base'>Inquire Now</Button>
       </div>
-      <Image src={Image1} alt='Image' className="w-full md:w-5/6 mx-auto my-6" />
+      <Image src={Image1} alt='Image' className="w-5/6 mx-auto my-6" />
       <div className="flex flex-col items-center my-6">
         <div className="text-sm md:text-base font-semibold text-gray-400">Regulated by</div>
         <Image src={Image2} alt='Image' className="w-48" />
       </div>
       <div className="border-t border-gray-200 "></div>
-      <div className="md:grid grid-cols-2 gap-8 bg-white py-10">
+      <div className="md:grid grid-cols-2 gap-8 bg-white pt-4 py-2 md:pt-14 md:py-12 ">
         <div className="col-span-1  ">
           <div className="md:flex mx-auto text-2xl md:text-4xl font-bold w-5/6 md:w-4/6  mb-4">Everything you need to grow
             your business</div>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className='md:hidden border-t border-gray-200 my-4'></div>
         <div className="col-span-1">
-          <div className="md:flex gap-3 mb-8 ml-4 md:ml-0">
+          <div className="md:flex gap-3 mb-8 w-5/6 md:w-full mx-auto">
             <div >
               <Image src={DealerLoansIcon} alt="Image" width={40}></Image>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
               <div className="text-base text-gray-400 w-5/6">Get comprehensive car financing solutions, unlock the potential of your dealership and take it to new heights.</div>
             </div>
           </div>
-          <div className="md:flex gap-3 ml-4 md:ml-0">
+          <div className="md:flex gap-3 mb-8 w-5/6 md:w-full mx-auto">
             <div>
               <Image src={DealershipMSystemIcon} alt="Image" width={40}></Image>
             </div>
@@ -82,17 +82,17 @@ export default function Home() {
         </div>
       </div>
       {/* CAR FINANCING SECTION */}
-      <div className="grid grid-cols-2 my-20">
+      <div className="md:grid grid-cols-2 my-10 md:my-20">
         <div className="col-span-1">
-          <Image src={Image3} alt="Image" className="shadow-md rounded-lg"></Image>
+          <Image src={Image3} alt="Image" className="hidden md:block shadow-md rounded-lg"></Image>
         </div>
-        <div className="col-span-1 flex flex-col mx-auto w-4/6">
-          <div className="text-4xl font-bold  mb-4">Car Financing</div>
-          <div className="text-xl font-semibold mb-2">Dealer Loans</div>
-          <div className="text-xl text-gray-400 mb-2">OneLot’s working capital loans allow car dealers to buy more cars and capitalize on opportunities you would otherwise have missed. We transfer the money to your account within 6 hours.
+        <div className="col-span-1 flex flex-col mx-auto w-5/6 md:w-4/6">
+          <div className="text-2xl md:text-4xl font-bold  mb-4">Car Financing</div>
+          <div className="text-base md:text-xl font-bold md:font-semibold mb-2">Dealer Loans</div>
+          <div className="text-base md:text-xl text-gray-400 mb-2">OneLot’s working capital loans allow car dealers to buy more cars and capitalize on opportunities you would otherwise have missed. We transfer the money to your account within 6 hours.
           </div>
           <div className="border border-gray-300 border-b-1 my-6"></div>
-          <div className="flex gap-2 my-2">
+          <div className="flex gap-2 my-2 ">
             <div>
               <Check className="bg-purple-200 rounded-full p-1 text-purple-800" />
             </div>
@@ -111,12 +111,13 @@ export default function Home() {
             <div className="text-base font-semibold">Financing period up to 90 days with a flexible repayment schedule at any point</div>
           </div>
           <div className="border border-gray-300 border-b-1 my-6"></div>
-          <div className="text-xl text-gray-400 mb-2">Use OneLot&apos;s financing solution today, grow the number of cars in your lot, and increase your profits.
+          <div className="text-base md:text-xl text-gray-400 mb-2">Use OneLot&apos;s financing solution today, grow the number of cars in your lot, and increase your profits.
           </div>
           <div className="my-6">
             <Button className='text-base'>View Loans<MoveRight /> </Button>
           </div>
         </div>
+        <Image src={Image3} alt="Image" className="md:hidden w-5/6 mx-auto rounded-lg"></Image>
       </div>
       {/* DEALERSHIP MANAGEMENT SYSTEM SECTION */}
       <div className="grid grid-cols-2 my-20">
