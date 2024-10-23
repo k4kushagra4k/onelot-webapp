@@ -290,7 +290,7 @@ export default function Home() {
               <div className="text-gray-400">
                 OneLot onboarding is easy and straightforward onboarding process. We only require a
                 few documents and after a few days you can get your first loan.</div>
-              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="block md:inline text-purple-800 font-semibold"> See full requirements.</span></div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -304,7 +304,7 @@ export default function Home() {
               <div className="text-gray-400">
                 OneLot onboarding is easy and straightforward onboarding process. We only require a
                 few documents and after a few days you can get your first loan.</div>
-              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="block md:inline text-purple-800 font-semibold"> See full requirements.</span></div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -319,7 +319,7 @@ export default function Home() {
               <div className="text-gray-400 ">
                 OneLot onboarding is easy and straightforward onboarding process. We only require a
                 few documents and after a few days you can get your first loan.</div>
-              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="block md:inline text-purple-800 font-semibold"> See full requirements.</span></div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -335,7 +335,7 @@ export default function Home() {
               <div className="text-gray-400">
                 OneLot onboarding is easy and straightforward onboarding process. We only require a
                 few documents and after a few days you can get your first loan.</div>
-              <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
+              <div className="text-gray-400">Check here for the exact requirements <span className="block md:inline text-purple-800 font-semibold"> See full requirements.</span></div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -343,16 +343,16 @@ export default function Home() {
           <Button className='text-base'>See all<MoveRight /> </Button>
         </div>
       </div>
-      <div className="bg-white py-10">
-        <div className="text-4xl text-center font-bold  my-10">Get started today
+      <div className="bg-white py-2 md:py-10">
+        <div className="text-2xl md:text-4xl text-center font-bold  my-5 md:my-10">Get started today
         </div>
-        <div className="flex mx-auto text-xl text-center text-gray-400 w-2/5">We look forward to serving the needs of used car dealers across the Philippines and helping them thrive in this dynamic market.
+        <div className="flex mx-auto text-xl text-center text-gray-400 w-5/6 md:w-2/5">We look forward to serving the needs of used car dealers across the Philippines and helping them thrive in this dynamic market.
         </div>
         <div className="flex justify-center my-6">
           <Button className='text-base'>Inquire Now </Button>
         </div>
         {/* . */}
-        <div className='flex justify-between mt-36 mb-10 px-20'>
+        <div className='hidden md:flex justify-between mt-36 mb-10 px-20'>
           <div className='flex items-center gap-1'>
             <Image src={Logo} alt='Image' width={60} height={60}></Image>
             <div className='text-2xl font-bold'>OneLot</div>
@@ -373,8 +373,8 @@ export default function Home() {
 
           </div>
         </div>
-        <div className="border border-gray-300 border-b-1 my-6"></div>
-        <div className='flex justify-between  px-20'>
+        <div className="hidden md:block border border-gray-300 border-b-1 my-6"></div>
+        <div className='hidden md:flex justify-between  px-20'>
           <div>
             <div className='text-gray-400'>&copy; 2023 OneLot Technologies Incorporated Pte. Ltd. All rights reserved.
             </div>
@@ -385,6 +385,10 @@ export default function Home() {
             <Instagram />
             <Facebook />
           </div>
+        </div>
+        <div className='md:hidden flex items-center gap-1 ml-4'>
+          <Image src={Logo} alt='Image' width={60} height={60}></Image>
+          <div className='text-2xl font-bold'>OneLot</div>
         </div>
       </div>
     </div>
