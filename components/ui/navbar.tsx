@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-5 ">
                     <Link href="/" legacyBehavior passHref>
                         <div className="flex items-center gap-1 ml-4 mt-4 cursor-pointer">
-                            <Image src={Logo} alt="Company Logo" width={35} height={35} />
+                            <Image src={Logo} alt="Company Logo" width={45} height={45} />
                             <strong className="font-bold text-lg">OneLot</strong>
                         </div>
                     </Link>

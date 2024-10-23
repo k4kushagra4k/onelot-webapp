@@ -176,7 +176,7 @@ export default function Home() {
       </div>
       <div className="bg-white py-2 md:py-10">
         <div className="text-2xl md:text-4xl text-center font-bold my-5 md:my-10 ">Why Onelot?</div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mx-4 my-5 md:mx-20 md:my-10">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mx-6 my-5 md:mx-20 md:my-10">
           <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
             <div className="flex justify-center my-1">
               <LockKeyhole className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
@@ -386,8 +386,8 @@ export default function Home() {
             <Facebook />
           </div>
         </div>
-        <div className='md:hidden flex items-center gap-1 ml-4'>
-          <Image src={Logo} alt='Image' width={60} height={60}></Image>
+        <div className='md:hidden flex items-center gap-1 ml-4 mt-20'>
+          <Image src={Logo} alt='Image' width={45} height={45}></Image>
           <div className='text-2xl font-bold'>OneLot</div>
         </div>
       </div>
