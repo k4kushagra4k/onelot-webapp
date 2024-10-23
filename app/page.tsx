@@ -84,7 +84,7 @@ export default function Home() {
       {/* CAR FINANCING SECTION */}
       <div className="md:grid grid-cols-2 my-10 md:my-20">
         <div className="col-span-1">
-          <Image src={Image3} alt="Image" className="hidden md:block shadow-md rounded-lg"></Image>
+          <Image src={Image3} alt="Image" className="hidden md:block shadow-md rounded-lg mx-auto"></Image>
         </div>
         <div className="col-span-1 flex flex-col mx-auto w-5/6 md:w-4/6">
           <div className="text-2xl md:text-4xl font-bold  mb-4">Car Financing</div>
@@ -120,12 +120,11 @@ export default function Home() {
         <Image src={Image3} alt="Image" className="md:hidden w-5/6 mx-auto rounded-lg"></Image>
       </div>
       {/* DEALERSHIP MANAGEMENT SYSTEM SECTION */}
-      <div className="grid grid-cols-2 my-20">
-        <div className="col-span-1 flex flex-col mx-auto w-4/6">
-          <div className="text-4xl font-bold  mb-4">Dealership Management
-            System</div>
-          {/* <div className="text-xl font-semibold mb-2">Dealer Loans</div> */}
-          <div className="text-xl text-gray-400 mb-2">OneLot’s digital platform has been build with the single
+      <div className="md:grid grid-cols-2 my-20">
+        <div className="col-span-1 flex flex-col mx-auto w-5/6 md:w-4/6">
+          <div className="text-2xl md:text-4xl font-bold  mb-4">Dealership Management System</div>
+
+          <div className="text-base md:text-xl text-gray-400 mb-2">OneLot’s digital platform has been build with the single
             goal to help used car dealers to operate their business
             more efficiently.
           </div>
@@ -166,18 +165,18 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-gray-300 border-b-1 my-6"></div>
-          <div className="text-xl text-gray-400 mb-2">Sign-up OneLot’s dealer platform today, and your cars easier</div>
+          <div className="text-base md:text-xl text-gray-400 mb-2">Sign-up OneLot’s dealer platform today, and your cars easier</div>
           <div className="my-6">
             <Button className='text-base'>Explore now<MoveRight /> </Button>
           </div>
         </div>
         <div className="col-span-1">
-          <Image src={Image4} alt="Image" className="shadow-md rounded-lg"></Image>
+          <Image src={Image4} alt="Image" className="w-5/6 md:w-full mx-auto rounded-lg"></Image>
         </div>
       </div>
-      <div className="bg-white py-10">
-        <div className="text-4xl text-center font-bold  my-10 ">Why Onelot?</div>
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mx-20 my-10">
+      <div className="bg-white py-2 md:py-10">
+        <div className="text-2xl md:text-4xl text-center font-bold my-5 md:my-10 ">Why Onelot?</div>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 mx-4 my-5 md:mx-20 md:my-10">
           <div className="col-span-1 text-center border border-gray-300 border-2 shadow-md rounded-lg p-4 h-60">
             <div className="flex justify-center my-1">
               <LockKeyhole className="bg-purple-200 p-2 w-12 h-12 rounded-lg text-purple-800 " />
@@ -227,7 +226,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="text-4xl text-center font-bold  mt-10 ">Testimonials </div>
+      <div className="text-2xl md:text-4xl text-center font-bold  mt-10 ">Testimonials </div>
       <div className="flex justify-center">
         <Carousel className="w-full max-w-full"
           opts={{
@@ -244,11 +243,11 @@ export default function Home() {
                         <AvatarImage src={DemoAvatar.src} alt="Avatar" />
                         <AvatarFallback>CN</AvatarFallback>
                       </Avatar>
-                      <div className="text-2xl text-center font-semibold my-2 w-7/12 p-2">“The service of OneLot is top notch, they act fast and can provide
+                      <div className="text-lg md:text-2xl text-center font-semibold my-2 w-5/6 md:w-7/12 md:p-2">“The service of OneLot is top notch, they act fast and can provide
                         dealers with the funds they need, when they need it.”</div>
-                      <div className="flex items-center gap-4">
-                        <div className="text-base font-semibold">Mark Vergel de Dios </div>
-                        <div className=" text-gray-400">Owner, MVD Auto Works</div>
+                      <div className="md:flex items-center gap-4">
+                        <div className="text-base font-semibold text-center">Mark Vergel de Dios </div>
+                        <div className=" text-gray-400 text-center">Owner, MVD Auto Works</div>
                       </div>
                     </CardContent>
                   </Card>
@@ -262,29 +261,29 @@ export default function Home() {
           </div>
         </Carousel>
       </div>
-      <div className="bg-white py-10">
-        <div className="text-4xl text-center font-bold  my-10">Stay connected</div>
-        <div className="flex mx-auto text-xl text-center text-gray-400 w-2/5">Follow OneLot on our Facebook and Instagram page and stay up to
+      <div className="bg-white py-2 md:py-10">
+        <div className="text-2xl md:text-4xl text-center font-bold  my-5 md:my-10">Stay connected</div>
+        <div className="flex mx-auto text-xl text-center text-gray-400 w-5/6 md:w-2/5">Follow OneLot on our Facebook and Instagram page and stay up to
           date with our most recent recent offers, updates and new product
           features
         </div>
-        <div className="flex justify-center items-center gap-2 my-6 ">
-          <Button variant="outline"><Facebook /> Follow us on Facebook</Button>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 my-6">
+          <Button variant="outline" ><Facebook /> Follow us on Facebook</Button>
           <Button variant="outline"><Instagram /> Follow us on Instagram</Button>
         </div>
-        <div className="w-full max-w-full my-10">
+        <div className="w-full mx-auto  my-10">
           <Image src={Image5} alt="Image"></Image>
         </div>
       </div>
-      <div className="text-4xl text-center font-bold  mt-10 ">Frequently asked questions
+      <div className=" text-2xl md:text-4xl text-center font-bold  mt-10 ">Frequently asked questions
       </div>
-      <div className="mx-auto max-w-4xl my-10">
+      <div className="mx-auto w-5/6 md:max-w-4xl my-10">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger >
-              <div className="flex items-center gap-1">
+              <div className="flex gap-1">
                 <CircleHelp />
-                <div className="text-base font-semibold">How do I apply for a loan? </div>
+                <div className="text-base font-semibold text-left">How do I apply for a loan?</div>
               </div>
             </AccordionTrigger>
             <AccordionContent>
@@ -296,9 +295,9 @@ export default function Home() {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger >
-              <div className="flex items-center gap-1">
+              <div className="flex gap-1">
                 <CircleHelp />
-                <div className="text-base font-semibold">What are the interest rates offered? </div>
+                <div className="text-base font-semibold text-left">What are the interest rates offered? </div>
               </div>
             </AccordionTrigger>
             <AccordionContent>
@@ -312,12 +311,12 @@ export default function Home() {
             <AccordionTrigger >
               <div className="flex items-center gap-1">
                 <CircleHelp />
-                <div className="text-base font-semibold">What kind of vehicles can I upload?
+                <div className="text-base font-semibold text-left">What kind of vehicles can I upload?
                 </div>
               </div>
             </AccordionTrigger>
             <AccordionContent>
-              <div className="text-gray-400">
+              <div className="text-gray-400 ">
                 OneLot onboarding is easy and straightforward onboarding process. We only require a
                 few documents and after a few days you can get your first loan.</div>
               <div className="text-gray-400">Check here for the exact requirements <span className="text-purple-800 font-semibold"> See full requirements.</span></div>
@@ -327,7 +326,7 @@ export default function Home() {
             <AccordionTrigger >
               <div className="flex items-center gap-1">
                 <CircleHelp />
-                <div className="text-base font-semibold">How can I keep track of potential buyers?
+                <div className="text-base font-semibold text-left">How can I keep track of potential buyers?
 
                 </div>
               </div>
