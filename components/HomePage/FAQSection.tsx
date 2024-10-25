@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { MoveRight, Facebook, Instagram, CircleHelp } from "lucide-react"
+import { MoveRight, CircleHelp } from "lucide-react"
 import {
     Accordion,
     AccordionContent,
