@@ -96,7 +96,7 @@ export default function Navbar() {
                 {/* Hamburger Menu */}
                 <div className="md:hidden mr-4 mt-4">
                     <button onClick={toggleMenu}>
-                        <Menu className='w-8 h-8'/>
+                        <Menu className='w-8 h-8' />
                     </button>
                 </div>
             </div>
@@ -143,9 +143,9 @@ export default function Navbar() {
                 {/* <div className="border-t border-gray-300  my-4 "></div> */}
 
                 <div className='flex flex-col items-center px-2'>
-                <Button className='text-base w-full'>Inquire Now</Button>
+                    <Button className='text-base w-full'>Inquire Now</Button>
                     <Button variant="ghost" className="font-semibold text-base text-gray-700 ">Log In</Button>
-                    
+
                 </div>
             </div>
             <div className="border-t border-gray-200  my-4 "></div>
